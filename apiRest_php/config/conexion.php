@@ -7,10 +7,10 @@ class Conectar{
         try {
             // Version de QA
             //$conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=jl_webservice","root","");
-            //Producción Godaddy
+            //Producción Hostinger
             //$conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=jl_webservice","root","");
             // Producción Heroku
-            $conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=jl_webservice","root","");
+            $conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=u218945770_apirestphpmysq","u218945770_apirestphp","1234Admin");
             return $conectar;
         } catch (Exception $e) {
             print "¡error DB!: ". $e->getMessage()."<br/>";
