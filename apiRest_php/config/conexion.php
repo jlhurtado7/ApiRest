@@ -10,7 +10,7 @@ class Conectar{
             // Producción Hostinger
             //$conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=u218945770_apirestphpmysq","u218945770_apirestphp","1234Admin");
             //Heroku
-            $conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=u218945770_apirestphpmysq","u218945770_apirestphp","1234Admin");
+            $conectar = $this->dbh = new PDO("mysql:host=us-cdbr-east-06.cleardb.net;dbname=heroku_60e844ddb891dc6","bef11762e67d12","1427674c");
             return $conectar;
         } catch (Exception $e) {
             print "¡error DB!: ". $e->getMessage()."<br/>";
